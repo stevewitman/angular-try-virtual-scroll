@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'try-virtual-scroll';
+  numbers: number[] = [];
+
+  constructor() {
+    for (let i = 0; i < 10000; i++) {
+      this.numbers.push(i);
+    }
+  }
+
 }
