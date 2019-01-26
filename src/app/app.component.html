@@ -1,6 +1,7 @@
-<cdk-virtual-scroll-viewport itemSize="150px" style="height: 500px;">
+<cdk-virtual-scroll-viewport itemSize="150" style="height: 500px;" id="virtual-scroll">
   <div *cdkVirtualFor="let number of numbers" class="item">
     {{ number }}
-    {{ number.even }}
   </div>
 </cdk-virtual-scroll-viewport>
+
+
